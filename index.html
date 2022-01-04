@@ -97,10 +97,10 @@
             </div>
             <div class="shortcut-links">
                 <p>Your Shortcuts</p>
-                <a href="#"><img src="Images/shortcut-1.png" alt=""> Handicrafts </a>
-                <a href="#"><img src="Images/shortcut-2.png" alt=""> Handlooms & Clothings </a>
-                <a href="#"><img src="Images/shortcut-3.png" alt=""> Paintings </a>
-                <a href="#"><img src="Images/shortcut-4.png" alt=""> Households </a>
+                <a href="#"><img src="Images/Handicrafts.jpg" alt=""> Handicrafts </a>
+                <a href="#"><img src="Images/Handlooms & Clothing.jpg" alt=""> Handlooms & Clothings </a>
+                <a href="#"><img src="Images/Painting.jpg" alt=""> Paintings </a>
+                <a href="#"><img src="Images/Household.jfif" alt=""> Households </a>
             </div>
         </div>
 
@@ -156,6 +156,103 @@
                 </div>
 
             </div>
+
+            <!-- Image Slider Start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Button -->
+                    <input type="radio" name="radio-auto" id="radio1">
+                    <input type="radio" name="radio-auto" id="radio2">
+                    <input type="radio" name="radio-auto" id="radio3">
+                    <input type="radio" name="radio-auto" id="radio4">
+                    <input type="radio" name="radio-auto" id="radio5">
+                    <input type="radio" name="radio-auto" id="radio6">
+                    <input type="radio" name="radio-auto" id="radio7">
+                    <input type="radio" name="radio-auto" id="radio8">
+                    <input type="radio" name="radio-auto" id="radio9">
+                    <input type="radio" name="radio-auto" id="radio10">
+
+                    <!-- Slide Images -->
+                    <div class="slide first">
+                        <img src="Images/Slider-1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/dp.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-8.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Slider-9.jpg" alt="">
+                    </div>
+
+                    <!-- Automatic Navigation -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                        <div class="auto-btn8"></div>
+                        <div class="auto-btn9"></div>
+                        <div class="auto-btn10"></div>
+                    </div>
+
+                </div>
+                <!-- Manual Navigation -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                    <label for="radio8" class="manual-btn"></label>
+                    <label for="radio9" class="manual-btn"></label>
+                    <label for="radio10" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+            <!-- Automatic Navigation Using Javascript -->
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 10){
+                    counter = 1;
+                }
+            }, 5000);
+            </script>
+            <!-- Image Slider End -->
 
             <div class="post-container">
                 <div class="post-row">
