@@ -4,487 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TribalSkillzzz</title>
+    <title>Login</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/6b2167aa48.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <h1 id="top"></h1>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-left">
-            <img src="Images/logo.ico" class="logo">
-            <h1>ribzzz</h1>
-            <ul>
-                <li><img src="Images/notification.ico"></li>
-                <li><img src="Images/mail.ico"></li>
-                <li><img src="Images/video.ico"></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <div class="search-box">
-                <img src="Images/mail.ico">
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="nav-user-icon online" onclick="SettingMenuToggle()">
-                <img src="Images/profile-pic.png">
-            </div>
-        </div>
-        
-        <!-- Setting Menu -->
-        <div class="setting-menu">
-
-            <div class="setting-menu-inner">
-
-                <div class="user-profile">
-                    <img src="Images/profile-pic.png">
-                    <div>
-                        <p>Json Malan</p>
-                        <a href="#">See Your Profile</a>
-                    </div>
-                </div>
-                <hr>
-    
-                <div class="user-profile">
-                    <img src="Images/feedback.png">
-                    <div>
-                        <p>Give Feedback</p>
-                        <a href="#">Help us to improve the new design</a>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="setting-links">
-                    <img src="Images/setting.png" class="setting-icon">
-                    <a href="#">Settings & Privacy <img src="Images/arrow.png" width="10px"></a>
-                </div>
-
-                <div class="setting-links">
-                    <img src="Images/help.png" class="setting-icon">
-                    <a href="#">Help & Support <img src="Images/arrow.png" width="10px"></a>
-                </div>
-
-                <div class="setting-links">
-                    <img src="Images/display.png" class="setting-icon">
-                    <a href="#">Display & Accessibility <img src="Images/arrow.png" width="10px"></a>
-                </div>
-
-                <div class="setting-links">
-                    <img src="Images/logout.png" class="setting-icon">
-                    <a href="#">Logout <img src="Images/arrow.png" width="10px"></a>
-                </div>                
-
-            </div>
-
-        </div>
-
-    </nav>
-
-    <!-- Left,Center,Right Column-->
     <div class="container">
-
-        <!-- Left Sidebar -->
-        <div class="left-sidebar">
-            <div class="imp-links">
-                <a href="#"><img src="Images/news.png"> Latest News </a>
-                <a href="#"><img src="Images/friends.png"> Friends </a>
-                <a href="#"><img src="Images/group.png"> Community </a>
-                <a href="#"><img src="Images/marketplace.png"> Market Place </a>
-                <a href="#"><img src="Images/watch.png"> Watch </a>
-                <a href="#"> See More</a>
-            </div>
-            <div class="shortcut-links">
-                <p>Your Shortcuts</p>
-                <a href="#"><img src="Images/Handicrafts.jpg" alt=""> Handicrafts </a>
-                <a href="#"><img src="Images/Handlooms & Clothing.jpg" alt=""> Handlooms & Clothings </a>
-                <a href="#"><img src="Images/Painting.jpg" alt=""> Paintings </a>
-                <a href="#"><img src="Images/Household.jfif" alt=""> Households </a>
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form action="home.html" target="blank">
+                        <input type="email" class="input-box" placeholder="Your Email Id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox" required><span>Remember Me</span>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <a href="#">Forget Password?</a>
+                    <a href="#" class="btn" onclick="openRegister()">I'm new here</a>
+                    <a href="registration.html" target="blank"><button type="button">Register Now</button></a>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form action="index.html" target="blank">
+                        <input type="text" class="input-box" placeholder="Your Name" required>
+                        <input type="email" class="input-box" placeholder="Your Email Id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox" required><span>Remember Me</span>
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                    <a href="#" class="btn">Already have an account?</a>
+                    <button type="button" onclick="openLogin()">Login</button>
+                </div>
             </div>
         </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-
-            <div class="story-gallery">
-
-                <div class="story story-1">
-                    <img src="Images/upload.png" alt="">
-                    <p>Post Story</p>
-                </div>
-
-                <div class="story story-2">
-                    <img src="Images/member-1.png" alt="">
-                    <p>Ayush Jha</p>
-                </div>
-
-                <div class="story story-3">
-                    <img src="Images/member-2.png" alt="">
-                    <p>Nishal Tandia</p>
-                </div>
-
-                <div class="story story-4">
-                    <img src="Images/member-3.png" alt="">
-                    <p>Kshitij Painkra</p>
-                </div>
-
-                <div class="story story-5">
-                    <img src="Images/member-4.png" alt="">
-                    <p>Subham Verma</p>
-                </div>
-
-            </div>
-
-            <div class="write-post-container">
-                
-               <div class="user-profile">
-                   <img src="Images/profile-pic.png">
-                   <div>
-                       <p>Json Malan</p>
-                       <small>Public <i class="fas fa-caret-down"></i></small>
-                   </div>
-               </div> 
-
-                <div class="post-input-container">
-                    <textarea rows="3" placeholder="New Ideas ?"></textarea>
-                    <div class="add-post-links">
-                        <a href="#"><img src="Images/live-video.png" alt=""> Live Video </a>
-                        <a href="#"><img src="Images/photo.png" alt=""> Photo/Video </a>
-                        <a href="#"><img src="Images/feeling.png" alt=""> Feeling/Activity </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Image Slider Start -->
-            <div class="slider">
-                <div class="slides">
-                    <!-- Radio Button -->
-                    <input type="radio" name="radio-auto" id="radio1">
-                    <input type="radio" name="radio-auto" id="radio2">
-                    <input type="radio" name="radio-auto" id="radio3">
-                    <input type="radio" name="radio-auto" id="radio4">
-                    <input type="radio" name="radio-auto" id="radio5">
-                    <input type="radio" name="radio-auto" id="radio6">
-                    <input type="radio" name="radio-auto" id="radio7">
-                    <input type="radio" name="radio-auto" id="radio8">
-                    <input type="radio" name="radio-auto" id="radio9">
-                    <input type="radio" name="radio-auto" id="radio10">
-
-                    <!-- Slide Images -->
-                    <div class="slide first">
-                        <img src="Images/Slider-1.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-1.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/dp.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-4.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-5.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-6.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-7.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-8.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="Images/Slider-9.jpg" alt="">
-                    </div>
-
-                    <!-- Automatic Navigation -->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                        <div class="auto-btn5"></div>
-                        <div class="auto-btn6"></div>
-                        <div class="auto-btn7"></div>
-                        <div class="auto-btn8"></div>
-                        <div class="auto-btn9"></div>
-                        <div class="auto-btn10"></div>
-                    </div>
-
-                </div>
-                <!-- Manual Navigation -->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                    <label for="radio5" class="manual-btn"></label>
-                    <label for="radio6" class="manual-btn"></label>
-                    <label for="radio7" class="manual-btn"></label>
-                    <label for="radio8" class="manual-btn"></label>
-                    <label for="radio9" class="manual-btn"></label>
-                    <label for="radio10" class="manual-btn"></label>
-                </div>
-
-            </div>
-
-            <!-- Automatic Navigation Using Javascript -->
-            <script type="text/javascript">
-            var counter = 1;
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 10){
-                    counter = 1;
-                }
-            }, 5000);
-            </script>
-            <!-- Image Slider End -->
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="Images/profile-pic.png" alt="">
-                        <div>
-                            <p>Json Malan</p>
-                            <span>June 24 2021, 13:40</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                </div>
-                
-                <p class="post-text">Subscribe <span>@Tribe India</span> Youtube channel to watch more videos on tribal artifacts and their skills using natural resources.  <a href="#">#TribeIndia</a>  <a href="#">#YoutubeChannel</a></p>
-                <img src="Images/feed-image-1.png" class="post-img">
-
-                <div class="post-row">
-
-                    <div class="activity-icons">
-                        <div><img src="Images/like-blue.png"> 120 </div>
-                        <div><img src="Images/comments.png"> 45 </div>
-                        <div><img src="Images/share.png"> 20 </div>
-                    </div>
-
-                    <div class="post-profile-icon">
-                        <img src="Images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="Images/profile-pic.png" alt="">
-                        <div>
-                            <p>Json Malan</p>
-                            <span>June 24 2021, 13:40</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                </div>
-                
-                <p class="post-text">Like and share this video with friends, tag <span>@Tribe India</span> facebook page on your post. Ask your doubts in the comments <a href="#">#TribeIndia</a>  <a href="#">#YoutubeChannel</a></p>
-                <img src="Images/feed-image-2.png" class="post-img">
-
-                <div class="post-row">
-
-                    <div class="activity-icons">
-                        <div><img src="Images/like.png"> 145 </div>
-                        <div><img src="Images/comments.png"> 60 </div>
-                        <div><img src="Images/share.png"> 30 </div>
-                    </div>
-
-                    <div class="post-profile-icon">
-                        <img src="Images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="Images/profile-pic.png" alt="">
-                        <div>
-                            <p>Json Malan</p>
-                            <span>June 24 2021, 13:40</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                </div>
-                
-                <p class="post-text">Like and share this video with friends, tag <span>@Tribe India</span> facebook page on your post. Ask your doubts in the comments <a href="#">#TribeIndia</a>  <a href="#">#YoutubeChannel</a></p>
-                <img src="Images/feed-image-3.png" class="post-img">
-
-                <div class="post-row">
-
-                    <div class="activity-icons">
-                        <div><img src="Images/like.png"> 100 </div>
-                        <div><img src="Images/comments.png"> 15 </div>
-                        <div><img src="Images/share.png"> 6 </div>
-                    </div>
-
-                    <div class="post-profile-icon">
-                        <img src="Images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="Images/profile-pic.png" alt="">
-                        <div>
-                            <p>Json Malan</p>
-                            <span>June 24 2021, 13:40</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                </div>
-                
-                <p class="post-text">Like and share this video with friends, tag <span>@Tribe India</span> facebook page on your post. Ask your doubts in the comments <a href="#">#TribeIndia</a>  <a href="#">#YoutubeChannel</a></p>
-                <img src="Images/feed-image-4.png" class="post-img">
-
-                <div class="post-row">
-
-                    <div class="activity-icons">
-                        <div><img src="Images/like.png"> 200 </div>
-                        <div><img src="Images/comments.png"> 80 </div>
-                        <div><img src="Images/share.png"> 100 </div>
-                    </div>
-
-                    <div class="post-profile-icon">
-                        <img src="Images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="Images/profile-pic.png" alt="">
-                        <div>
-                            <p>Json Malan</p>
-                            <span>June 24 2021, 13:40</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                </div>
-                
-                <p class="post-text">Like and share this video with friends, tag <span>@Tribe India</span> facebook page on your post. Ask your doubts in the comments <a href="#">#TribeIndia</a>  <a href="#">#YoutubeChannel</a></p>
-                <img src="Images/feed-image-5.png" class="post-img">
-
-                <div class="post-row">
-
-                    <div class="activity-icons">
-                        <div><img src="Images/like.png"> 75 </div>
-                        <div><img src="Images/comments.png"> 25 </div>
-                        <div><img src="Images/share.png"> 17 </div>
-                    </div>
-
-                    <div class="post-profile-icon">
-                        <img src="Images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <button type="button" class="load-more-btn"> Load More </button>
-
-        </div>
-
-        <!-- Right Sidebar -->
-        <div class="right-sidebar">
-
-            <div class="sidebar-title">
-                <h4>Events</h4>
-                <a href="#">See All</a>
-            </div>
-
-            <div class="event">
-                <div class="left-event">
-                    <h3>18</h3>
-                    <span>March</span>
-                </div>
-                <div class="right-event">
-                    <h4>Social Media</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Willson Techpark </p>
-                    <a href="#">More Info</a>
-                </div>  
-            </div>
-
-            <div class="event">
-                <div class="left-event">
-                    <h3>22</h3>
-                    <span>June</span>
-                </div>
-                <div class="right-event">
-                    <h4>Handlooms & Clothing</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Jino Park </p>
-                    <a href="#">More Info</a>
-                </div>  
-            </div>
-
-            <div class="sidebar-title">
-                <h4>Advertisement</h4>
-                <a href="#">Close</a>
-            </div>
-            <img src="Images/advertisement.png" class="sidebar-ads">
-
-            <div class="sidebar-title">
-                <h4>Conversation</h4>
-                <a href="#">Hide Chat</a>
-            </div>
-
-            <div class="online-list">
-                <div class="online">
-                    <img src="Images/member-1.png">
-                </div>
-                <p>Nitya</p>
-            </div>
-
-            <div class="online-list">
-                <div class="online">
-                    <img src="Images/member-2.png">
-                </div>
-                <p>Shudhanshu Upadhaya</p>
-            </div>
-
-            <div class="online-list">
-                <div class="online">
-                    <img src="Images/member-3.png">
-                </div>
-                <p>Subham Bagde</p>
-            </div>
-
-        </div>
-
     </div>
 
-<div class="footer">
-    <p> Copyright 2021 - Tribe India </p>
-</div>
+    <script>
 
-<div class="back-to-top">
-    <a href="#top">Back to the top</a>
-</div>
+        var card = document.getElementById("card");
 
-<script src="script.js"></script>
-    
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+
+    </script>
+
 </body>
-</html> 
+</html>
