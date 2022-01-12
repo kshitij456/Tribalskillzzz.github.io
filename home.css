@@ -5,12 +5,29 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+/* Media Quaries */
+@media(max-width: 998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+}
+
 body{
     background: #efefef;
 }
 
 .logo{
-    size: 10px;
+    size: 1.0rem;
 }
 
 /* Navigation Bar */
@@ -19,21 +36,21 @@ nav{
     align-items: center;
     justify-content: space-between;
     background: #1876f2;
-    padding: 5px 5%;
+    padding: .5rem 5%;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 .logo{
-    width: 80px;
-    margin-right: 45px;
+    width: 8.0rem;
+    margin-right: 4.5rem;
 }
 
 .nav-left h1{
-    margin-left: -60px;
-    margin-top: 10px;
-    margin-right: 30px;
+    margin-left: -6.0rem;
+    margin-top: 1.0rem;
+    margin-right: 3.0rem;
     font-weight: 800;
     font-size: xx-large;
 }
@@ -49,38 +66,38 @@ nav{
 }
 
 .nav-left ul li img{
-    width: 28px;
-    margin: 0 15px;
+    width: 2.8rem;
+    margin: 0 1.5rem;
 }
 
 .search-box img{
-    width: 28px;
-    margin: 0 15px;
+    width: 2.8rem;
+    margin: 0 1.5rem;
 }
 
 .nav-user-icon img{
-    width: 40px;
+    width: 4.0rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .nav-user-icon{
-    margin: 30px;
+    margin: 3.0rem;
 }
 
 .search-box{
     background: #efefef;
-    width: 240px;
-    border-radius: 20px;
+    width: 24.0rem;
+    border-radius: 2.0rem;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 }
 
 .search-box input{
     width: 100%;
     background: transparent;
-    padding: 10px;
+    padding: 1.0rem;
     outline: none;
     border: 0;
 }
@@ -91,9 +108,9 @@ nav{
 
 .online::after{
     content: '';
-    width: 7px;
-    height: 7px;
-    border: 2px solid #fff;
+    width: .7rem;
+    height: .7rem;
+    border: .2rem solid #fff;
     border-radius: 50%;
     background: #41bd51;
     position: absolute;
@@ -105,45 +122,48 @@ nav{
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 13px 5%;
+    padding: 1.3rem 5%;
 }
 
 /* Left Sidebar */
 .left-sidebar{
-    margin-top: 20px;
+    margin-top: 2.0rem;
     flex-basis: 25%;
     position: sticky;
-    top: 70px;
+    top: 7.0rem;
     align-self: flex-start;
+    font-size: 1.6rem;
 }
 
 .right-sidebar{
     flex-basis: 25%;
     position: sticky;
-    top: 70px;
+    top: 7.0rem;
     align-self: flex-start;
     background: #fff;
-    padding: 20px;
-    border-radius: 4px;
+    padding: 2.0rem;
+    border-radius: .4rem;
     color: #626262;
+    font-size: 1.6rem;
 }
 
 .main-content{
     flex-basis: 47%;
+    font-size: 1.6rem;
 }
 
 .imp-links a, .shortcut-links a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 3.0rem;
     color: #626262;
     width: fit-content;
 }
 
 .imp-links a img{
-    width: 25px;
-    margin-right: 15px;
+    width: 2.5rem;
+    margin-right: 1.5rem;
 }
 
 .imp-links a:last-child{
@@ -151,17 +171,17 @@ nav{
 }
 
 .imp-links{
-    border-bottom: 1px solid #ccc;
+    border-bottom: .1rem solid #ccc;
 }
 
 .shortcut-links a img{
-    width: 40px;
-    border-radius: 4px;
-    margin-right: 15px;
+    width: 4.0rem;
+    border-radius: .4rem;
+    margin-right: 1.5rem;
 }
 
 .shortcut-links p{
-    margin: 25px 0;
+    margin: 2.5rem 0;
     color: #626262;
     font-weight: 500;
 }
@@ -171,43 +191,43 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 1.8rem;
 }
 
 .right-sidebar h4{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .sidebar-title a{
     text-decoration: none;
     color: #1876f2;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .event{
     display: flex;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 2.0rem;
 }
 
 .left-event{
-    border-radius: 10px;
-    height: 65px;
-    width: 65px;
-    margin-right: 15px;
-    padding-top: 10px;
+    border-radius: 1.0rem;
+    height: 6.5rem;
+    width: 6.5rem;
+    margin-right: 1.5rem;
+    padding-top: 1.0rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.1);
 }
 .event p{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .event a{
-    font-size: 12px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #1876f2;
 }
@@ -219,41 +239,41 @@ nav{
     width: 100%;
     background: #1876f2;
     color: #fff;
-    font-size: 13px;
-    padding: 4px 0;
+    font-size: 1.3rem;
+    padding: .4rem 0;
 }
 
 .sidebar-ads{
     width: 100%;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    margin-bottom: 2.0rem;
+    border-radius: .4rem;
 }
 
 .online-list{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
 }
 .online-list .online img{
-    width: 40px;
+    width: 4.0rem;
     border-radius: 50%;
 }
 .online-list .online{
-    width: 40px;
+    width: 4.0rem;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .online-list .online::after{
     top: unset;
-    bottom: 5px;
+    bottom: .5rem;
 }
 
 /* Main Content */
 .story-gallery{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
 }
 
 .story{
@@ -262,25 +282,25 @@ nav{
     position: relative;
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-1.png);
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 1.0rem;
 }
 
 .story img{
     position: absolute;
-    width: 45px;
+    width: 4.5rem;
     border-radius: 50%;
-    top: 10px;
-    left: 10px;
-    border: 5px solid #1876f2;
+    top: 1.0rem;
+    left: 1.0rem;
+    border: .5rem solid #1876f2;
 }
 
 .story p{
     position: absolute;
-    bottom: 10px;
+    bottom: .5rem;
     width: 100%;
     text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .story-1{
@@ -306,14 +326,14 @@ nav{
 .story img{
     top: unset;
     left: 20%;
-    bottom: 20px;
+    bottom: 2.0rem;
     transform: translateX(-50%);
 }
 
 .story.story-1 img{
     top: unset;
     left: 50%;
-    bottom: 30px;
+    bottom: 3.0rem;
     transform: translateX(-50%);
     border: 0;
 }
@@ -321,17 +341,17 @@ nav{
 .write-post-container{
     width: 100%;
     background: #fff;
-    border-radius: 6px;
-    padding: 20px;
+    border-radius: .6rem;
+    padding: 2.0rem;
     color: #626262;
 }
 
 /* IMAGE SLIDER */
 .slider{
-    border-radius: 6px;
-    margin-top: 20px;
-    width: 650px;
-    height: 500px;
+    border-radius: .6rem;
+    margin-top: 2.0rem;
+    width: 65.0rem;
+    height: 50.0rem;
     overflow: hidden;
     display: flex;
     text-align: center;
@@ -341,7 +361,7 @@ nav{
 }
 .slides{
     width: 500%;
-    height: 500px;
+    height: 50.0rem;
     display: flex;
 }
 .slides input{
@@ -352,26 +372,26 @@ nav{
     transition: 1s;
 }
 .slide img{
-    width: 650px;
-    height: 500px;
+    width: 65.0rem;
+    height: 50.0rem;
 }
 .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    margin-bottom: 20px;
+    width: 80.0rem;
+    margin-top: -4.0rem;
+    margin-bottom: 2.0rem;
     display: flex;
     justify-content: center;
 }
 .manual-btn{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
+    border: .2rem solid #40D3DC;
+    padding: .5rem;
+    border-radius: 1.0rem;
     cursor: pointer;
     transition: 1s;
 }
 .manual-btn:not(:last-child){
-    margin-right: 40px;
+    margin-right: 4.0rem;
 }
 .manual-btn:hover{
     background: #40D3DC;
@@ -414,38 +434,38 @@ nav{
 }
 
 .user-profile img{
-    width: 45px;
+    width: 4.5rem;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 1.0rem;
 }
 
 .user-profile p{
-    margin-bottom: -5px;
+    margin-bottom: -.5rem;
     font-weight: 500;
     color: #626262;
 }
 
 .user-profile small{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .post-input-container{
-    padding-left: 55px;
-    padding-top: 20px;
+    padding-left: 5.5rem;
+    padding-top: 2.0rem;
 }
 
 .post-input-container textarea{
     width: 100%;
     border: 0;
     outline: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: .1rem solid #ccc;
     background: transparent;
     resize: none;
 }
 
 .add-post-links{
     display: flex;
-    margin-top: 10px;
+    margin-top: 1.0rem;
 }
 
 .add-post-links a{
@@ -453,33 +473,33 @@ nav{
     display: flex;
     align-items: center;
     color: #626262;
-    margin-right: 30px;
-    font-size: 13px;
+    margin-right: 3.0rem;
+    font-size: 1.3rem;
 }
 
 .add-post-links a img{
-    width: 20px;
-    margin-right: 10px;
+    width: 2.0rem;
+    margin-right: 1.0rem;
 }
 
 .post-container{
     width: 100%;
     background: #fff;
-    border-radius: 6px;
-    padding: 20px;
+    border-radius: .6rem;
+    padding: 2.0rem;
     color: #626262;
-    margin: 20px 0;
+    margin: 2.0rem 0;
 }
 
 .user-profile span{
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #9a9a9a;
 }
 
 .post-text{
     color: #9a9a9a;
-    margin: 15px 0;
-    font-size: 15px;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
 }
 
 .post-text span{
@@ -494,8 +514,8 @@ nav{
 
 .post-img{
     width: 100%;
-    border-radius: 4px;
-    margin-bottom: 5px;
+    border-radius: .4rem;
+    margin-bottom: .5rem;
 }
 
 .post-row{
@@ -505,14 +525,14 @@ nav{
 }
 
 .activity-icons div img{
-    width: 18px;
-    margin-right: 10px;
+    width: 1.8rem;
+    margin-right: 1.0rem;
 }
 
 .activity-icons div{
     display: inline-flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 3.0rem;
 }
 
 .post-profile-icon{
@@ -521,9 +541,9 @@ nav{
 }
 
 .post-profile-icon img{
-    width: 20px;
+    width: 2.0rem;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: .5rem;
 }
 
 .post-row a{
@@ -534,26 +554,26 @@ nav{
     display: block;
     margin: auto;
     cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #9a9a9a;
+    padding: .5rem 1.0rem;
+    border: .1rem solid #9a9a9a;
     color: #626262;
     background: transparent;
-    border-radius: 4px;
+    border-radius: .4rem;
 }
 
 .footer{
     text-align: center;
     color: #9a9a9a;
-    padding: 10px 0 20px;
-    font-size: 13px;
+    padding: 1.0rem 0 2.0rem;
+    font-size: 1.3rem;
 }
 
 .back-to-top a{
     display: flex;
     justify-content: center;
     color: #9a9a9a;
-    padding: 0 0 20px;
-    font-size: 13px;
+    padding: 0 0 2.0rem;
+    font-size: 1.3rem;
     text-decoration: none;
     font-weight: 700;    
 }
@@ -561,47 +581,48 @@ nav{
 .setting-menu{
     position: absolute;
     width: 90%;
-    max-width: 350px;
+    max-width: 35.0rem;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
+    box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.4);
+    border-radius: .4rem;
     overflow: hidden;
     top: 80%;
     right: 5%;
     max-height: 0;
     transition: max-height 0.3s;
+    font-size: 1.6rem;
 }
 
 .setting-menu-height{
-    max-height: 450px;
+    max-height: 45.0rem;
 }
 
 .user-profile a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #1876f2;
 }
 
 .setting-menu-inner{
-    padding: 20px;
+    padding: 2.0rem;
 }
 
 .setting-menu hr{
     border: 0;
-    height: 1px;
+    height: .1rem;
     background: #9a9a9a;
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
 .setting-links{
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
 .setting-links .setting-icon{
-    width: 38px;
-    margin-right: 10px;
+    width: 3.8rem;
+    margin-right: 1.0rem;
     border-radius: 50%;
 }
 
