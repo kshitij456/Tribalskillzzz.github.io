@@ -20,6 +20,9 @@ html{
     html{
         font-size: 45%;
     }
+    nav{
+        width: 154%;
+    }
 }
 
 body{
@@ -37,7 +40,6 @@ nav{
     justify-content: space-between;
     background: #1876f2;
     padding: .5rem 5%;
-    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 100;
